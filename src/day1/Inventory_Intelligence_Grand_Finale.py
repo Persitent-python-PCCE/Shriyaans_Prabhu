@@ -26,9 +26,13 @@ def inventory_report(inventory, gst=0.05, **filters):
     print(f"Prices incl. GST: {GST_lst}")
     print(f"Matching filters {filters}",end=" :")
     for pd,ctg,stc,pc in inventory:
-        for k in filters:
-            if filters[k]==ctg:
-                item_ls.append(pd)
+      fg1=False
+      fg2=False
+      if "category" in filters and ctg==filters["category"]:
+        fg1=True
+      if "max_price" in filters and pc<=filters["max_price"]:
+        fg2=True
+      if fg1 and fg2:
+        item_ls.append(pd)
     print(item_ls)
-inventory_report(inv, category="Snack",max_price=15)
-
+inventory_report(inv, category="Tea",max_price=20)
