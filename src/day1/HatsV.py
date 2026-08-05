@@ -19,5 +19,7 @@ def student(n,sig):
         print(f"{name} you belong in Ravenclaw ({R} Signals)")
     elif S>G and S>H and S>R:
         print(f"{name} you belong in Slytherin ({S} Signals)")
+    else:
+      print(f"Ambigious signal")
 
 student(name,signal)
