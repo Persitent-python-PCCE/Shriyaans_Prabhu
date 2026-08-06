@@ -1,0 +1,9 @@
+-- report_redacted.txt --
+The [REDACTED] project launched with client [REDACTED] last quarter.
+ [REDACTED] exceeded targets, and [REDACTED] renewed the contract.
+ Our next initiative, Project [REDACTED] 2, begins in March.
+-- console --
+Redaction complete.
+Titan -> 3 occurrences 
+Acme Corp -> 2 occurrences redacted
+Output saved to report_redacted.txt
