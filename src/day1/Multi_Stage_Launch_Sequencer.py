@@ -1,4 +1,4 @@
-def launch(*stages,thresh_hold=6000):
+def launch(*stages,thresh_hold=5000):
     sum=0
     stage=1
     for i in range(len(stages)):
