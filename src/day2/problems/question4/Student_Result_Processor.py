@@ -48,11 +48,32 @@ for t in student_results:
         print(f"Class Topper : {t["name"]} (avg {t["average"]})")
 print(f"Passed : {passed} | Failed : {failed}")
 with open("students_result.csv","w") as Of:
+    fields = [
+        "roll_no",
+        "name",
+        "maths",
+        "physics",
+        "chemistry",
+        "total",
+        "average",
+        "grade"
+    ]
+    Write=csv.DictWriter(Of,fieldnames=fields)
     write=csv.writer(Of)
     write.writerow(["-- students_result.csv --"])
-    write.writerow([f"roll_no,name,maths,physics,chemistry,total,average,grade"])
-    for L in student_results:
-        write.writerow([f"{L["roll_no"]},{L["name"]},{L["maths"]},{L["physics"]},{L["chemistry"]},{L["total"]},{L["average"]},{L["grade"]}"])
+    write.writerow(["roll_no,name,maths,physics,chemistry,total,average,grade"])
+    Write.writeheader()
+    for studs in student_results:  
+        write.writerow([
+                 studs["roll_no"],
+            studs["name"],
+        studs["maths"],
+        studs["physics"],
+        studs["chemistry"],
+        studs["total"],
+        studs["average"],
+        studs["grade"]
+    ])
     write.writerow([f"-- console --"])
     write.writerow([f"Processed {count} students -> students_result.csv"])
     for t in student_results:

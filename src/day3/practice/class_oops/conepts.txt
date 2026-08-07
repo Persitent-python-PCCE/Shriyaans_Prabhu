@@ -1,0 +1,4 @@
+class --> members (variables,functions cunstructor)
+member variables - attributes  properties
+member functions - methods - behaviours
+

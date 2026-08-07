@@ -43,6 +43,5 @@ class Queue:
             print("Queue is Empty.")
         else:
             return self.Q[-1]
-
-
+# Linked List 
             

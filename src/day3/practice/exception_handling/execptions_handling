@@ -1,0 +1,8 @@
+types of errors
+file errors
+value errors
+index errors
+mathametical errors:
+ArtihmeticError ZeroDivision Overflow
+LookUpError= IndexError 
+User Defiend Exceptions 
