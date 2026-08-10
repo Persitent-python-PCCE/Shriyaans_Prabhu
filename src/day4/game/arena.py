@@ -54,9 +54,7 @@ class Archer(Character):
                 print(f"🎯 Alex (Archer) lands a Critical Hit! Deals {raw_damage} damage.")
             damage=target.take_damage(raw_damage)
             print(f"🏹 {self.name} (Archer) shoots an arrow! Deals {damage} damage.")
-Thor=Worrior("Thor")
-Alex=Archer("Alex")
-Gandalf=Mage("Gandalf")
+Thor,Alex,Gandalf=Worrior("Thor"),Archer("Alex"),Mage("Gandalf")
 lst=[Thor,Alex,Gandalf]
 # print(lst)
 lst.sort(key=lambda fighter:fighter.speed,reverse=True)
