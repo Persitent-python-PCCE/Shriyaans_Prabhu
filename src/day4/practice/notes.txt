@@ -1,0 +1,9 @@
+Inheritance , methods and objects 
+Types of Inheritance : Simple , Multiple , Multilevel , hirarichal ,Hybrid 
+Runtime-> Overriding ->Inheritance
+Compile-> Overloading -> order , number,data type 
+
+operattor Overloading
+magic methods -> dunder methods
+
+Abstraction :
