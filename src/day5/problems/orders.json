@@ -1,0 +1,52 @@
+[
+  {
+    "order_id": 362204,
+    "customer_id": 2503,
+    "product": "Laptop",
+    "quantity": 1,
+    "unit_price": 67058.56447602439,
+    "total_amount": 67058.56447602439,
+    "status": "Cancelled",
+    "order_date": "2026-08-13"
+  },
+  {
+    "order_id": 632592,
+    "customer_id": 3325,
+    "product": "Monitor",
+    "quantity": 5,
+    "unit_price": 108231.9649477303,
+    "total_amount": 541159.8247386515,
+    "status": "Pending",
+    "order_date": "2026-08-20"
+  },
+  {
+    "order_id": 693382,
+    "customer_id": 3578,
+    "product": "Mouse",
+    "quantity": 5,
+    "unit_price": 96676.43816506988,
+    "total_amount": 483382.1908253494,
+    "status": "Cancelled",
+    "order_date": "2026-08-27"
+  },
+  {
+    "order_id": 508532,
+    "customer_id": 5856,
+    "product": "Monitor",
+    "quantity": 5,
+    "unit_price": 89339.75406065046,
+    "total_amount": 446698.7703032523,
+    "status": "Delivered",
+    "order_date": "2026-09-03"
+  },
+  {
+    "order_id": 946052,
+    "customer_id": 1675,
+    "product": "Laptop",
+    "quantity": 1,
+    "unit_price": 97316.20149555894,
+    "total_amount": 97316.20149555894,
+    "status": "Delivered",
+    "order_date": "2026-09-10"
+  }
+]

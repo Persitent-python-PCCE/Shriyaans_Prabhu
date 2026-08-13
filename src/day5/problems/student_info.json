@@ -1,77 +1,77 @@
 [
   {
     "student_id": 1,
-    "name": "Riya",
-    "age": 21,
-    "department": "Information Technology",
+    "name": "Kumar",
+    "age": 18,
+    "department": "Computer Science",
     "marks": {
-      "python": 92,
-      "database": 100,
-      "networks": 19
+      "python": 25,
+      "database": 66,
+      "networks": 54
     },
-    "total": 211,
-    "average": 70.33333333333333,
+    "total": 145,
+    "average": 48.333333333333336,
     "result": "Fail",
     "exam_date": "2026-01-02"
   },
   {
     "student_id": 2,
-    "name": "Raj",
-    "age": 18,
+    "name": "Priya",
+    "age": 21,
     "department": "Mechanical",
     "marks": {
-      "python": 61,
-      "database": 69,
-      "networks": 88
+      "python": 90,
+      "database": 68,
+      "networks": 61
     },
-    "total": 218,
-    "average": 72.66666666666667,
+    "total": 219,
+    "average": 73.0,
     "result": "Pass",
     "exam_date": "2026-01-07"
   },
   {
     "student_id": 3,
-    "name": "Amit",
+    "name": "Raj",
     "age": 22,
-    "department": "Computer Science",
+    "department": "Electronics",
     "marks": {
-      "python": 29,
-      "database": 38,
-      "networks": 32
+      "python": 34,
+      "database": 78,
+      "networks": 14
     },
-    "total": 99,
-    "average": 33.0,
+    "total": 126,
+    "average": 42.0,
     "result": "Fail",
     "exam_date": "2026-01-12"
   },
   {
     "student_id": 4,
-    "name": "Priya",
-    "age": 19,
-    "department": "Computer Science",
+    "name": "Riya",
+    "age": 23,
+    "department": "Information Technology",
     "marks": {
-      "python": 15,
-      "database": 68,
-      "networks": 37
+      "python": 2,
+      "database": 59,
+      "networks": 53
     },
-    "total": 120,
-    "average": 40.0,
+    "total": 114,
+    "average": 38.0,
     "result": "Fail",
     "exam_date": "2026-01-17"
   },
   {
     "student_id": 5,
-    "name": "Kumar",
-    "age": 18,
-    "department": "Electronics",
+    "name": "Amit",
+    "age": 19,
+    "department": "Information Technology",
     "marks": {
-      "python": 57,
-      "database": 95,
-      "networks": 60
+      "python": 37,
+      "database": 72,
+      "networks": 78
     },
-    "total": 212,
-    "average": 70.66666666666667,
-    "result": "Pass",
+    "total": 187,
+    "average": 62.333333333333336,
+    "result": "Fail",
     "exam_date": "2026-01-22"
   }
 ]
