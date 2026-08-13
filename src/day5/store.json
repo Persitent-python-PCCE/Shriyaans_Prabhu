@@ -1,0 +1,37 @@
+{
+  "user": {
+    "name": "Shriyaans",
+    "age": 22
+  },
+  "json_products": [
+    {
+      "name": "TV",
+      "price": 40000,
+      "brand": "Samsung",
+      "model": "QLED 55",
+      "category": "Electronics",
+      "warranty_years": 2,
+      "stock": 15
+    }
+  ],
+  "xml_product": {
+    "id": "100",
+    "name": "Shoe",
+    "price": "12000"
+  },
+  "yaml_product": {
+    "product": {
+      "id": 1,
+      "product": "laptop",
+      "price": 105000,
+      "specs": [
+        {
+          "cpu": "intel i7",
+          "screen": "OLED",
+          "ram": 16,
+          "Storage": 512
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+product: 
+  id: 1
+  product: "laptop"
+  price: 105000
+  specs: 
+    - cpu: "intel i7"
+      screen: "OLED"
+      ram: 16
+      Storage: 512
+      
+
+

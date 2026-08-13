@@ -1,0 +1,11 @@
+[
+  {
+    "name": "TV",
+    "price": 40000,
+    "brand": "Samsung",
+    "model": "QLED 55",
+    "category": "Electronics",
+    "warranty_years": 2,
+    "stock": 15
+  }
+]
