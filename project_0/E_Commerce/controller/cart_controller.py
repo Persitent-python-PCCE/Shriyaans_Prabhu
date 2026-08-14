@@ -6,9 +6,7 @@ class CartController:
         self.cart_service = CartService()
         self.order_service = OrderService()
 
-    # =========================
-    # VIEW CART
-    # =========================
+    
 
     def display_cart(self, customer):
 
@@ -74,9 +72,7 @@ class CartController:
 
         print("=" * 80)
 
-    # =========================
-    # ADD PRODUCT
-    # =========================
+    
 
     def add_item(self, customer):
 
@@ -108,9 +104,7 @@ class CartController:
 
             return False
 
-    # =========================
-    # UPDATE QUANTITY
-    # =========================
+    
 
     def update_item(self, customer):
 
@@ -142,9 +136,7 @@ class CartController:
 
             return False
 
-    # =========================
-    # REMOVE PRODUCT
-    # =========================
+    
 
     def remove_item(self, customer):
 
@@ -171,10 +163,7 @@ class CartController:
 
             return False
 
-    # =========================
-    # CLEAR CART
-    # =========================
-
+   
     def clear_cart(self, customer):
 
         confirm = input(
@@ -190,9 +179,7 @@ class CartController:
             customer.user_id
         )
 
-    # =========================
-    # PLACE ORDER FROM CART
-    # =========================
+    
 
     def place_order(self, customer):
 
@@ -223,9 +210,7 @@ class CartController:
         if order:
             self.display_order(order)
 
-    # =========================
-    # DISPLAY ORDER
-    # =========================
+    
 
     def display_order(self, order):
 
@@ -252,9 +237,7 @@ class CartController:
 
         print("=" * 70)
 
-    # =========================
-    # ORDER HISTORY
-    # =========================
+    
 
     def display_order_history(self, customer):
 
@@ -281,9 +264,7 @@ class CartController:
 
         print("=" * 60)
 
-    # =========================
-    # VIEW ORDER DETAILS
-    # =========================
+   
 
     def view_order(self, customer):
 
@@ -306,9 +287,7 @@ class CartController:
         except ValueError:
             print("Invalid order ID.")
 
-    # =========================
-    # CART MENU (Combined Cart & Order)
-    # =========================
+    
 
     def show_cart_menu(self, customer):
 

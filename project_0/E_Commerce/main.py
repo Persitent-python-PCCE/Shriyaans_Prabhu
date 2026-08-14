@@ -5,7 +5,7 @@ def main():
     current_user = None
 
     while True:
-        # If no user logged in, show login/register menu
+       
         if current_user is None:
             print("\n" + "=" * 50)
             print("    WELCOME TO E-COMMERCE APPLICATION")
@@ -41,7 +41,7 @@ def main():
             else:
                 print("\nInvalid choice. Please try again.")
 
-        # User is logged in, show user menu
+         
         else:
             result = user_controller.show_user_menu(current_user)
             
@@ -49,7 +49,7 @@ def main():
                 print("\nThank you for using E-Commerce Application. Goodbye!")
                 break
             else:
-                # result is None (logged out) or a new user (from register)
+                 
                 current_user = result
 
 

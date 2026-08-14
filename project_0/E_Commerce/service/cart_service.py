@@ -35,7 +35,7 @@ class CartService:
             print("Quantity must be greater than zero.")
             return False
 
-        # Get product
+         
         product = self.product_dao.get_product_by_id(
             product_id
         )
@@ -44,12 +44,12 @@ class CartService:
             print("Product not found.")
             return False
 
-        # Check stock
+        
         if product["stock"] <= 0:
             print("Product is out of stock.")
             return False
 
-        # Check existing quantity
+         
         cart_item = self.cart_dao.get_cart_item(
             customer_id,
             product_id
@@ -59,8 +59,7 @@ class CartService:
 
         if cart_item:
             current_quantity = cart_item["quantity"]
-
-        # Check total quantity
+ 
         if current_quantity + quantity > product["stock"]:
 
             print(

@@ -11,9 +11,7 @@ class UserController:
         self.order_controller = OrderController()
         self.product_controller = ProductController()
 
-    # =========================
-    # REGISTRATION
-    # =========================
+    
 
     def register_user(self):
 
@@ -21,7 +19,7 @@ class UserController:
         print("          USER REGISTRATION")
         print("=" * 40)
 
-        # Ask for role
+         
         print("\nSelect your role:")
         print("1. Customer")
         print("2. Admin")
@@ -45,12 +43,12 @@ class UserController:
         password =getpass.getpass("Enter password: ")
         confirm_password = getpass.getpass("Confirm password: ")
 
-        # Confirm password
+        
         if password != confirm_password:
             print("\nPasswords do not match.")
             return None
 
-        # Customer-only information
+        
         contact_name = None
         address = None
         city = None
@@ -78,7 +76,7 @@ class UserController:
                 "Enter country (optional): "
             ).strip()
 
-        # Register user
+        
         user = self.user_service.register(
             name=name,
             email=email,
@@ -98,10 +96,7 @@ class UserController:
         print("\nRegistration failed.")
         return None
 
-    # =========================
-    # DELETE ACCOUNT
-    # =========================
-
+    
     def delete_account(self, user):
 
         print("\n" + "=" * 40)
@@ -133,9 +128,7 @@ class UserController:
         print("\nFailed to delete account. Invalid password.")
         return False
 
-    # =========================
-    # LOGIN
-    # =========================
+  
 
     def login_user(self):
 
@@ -157,9 +150,7 @@ class UserController:
 
         return None
 
-    # =========================
-    # DISPLAY USER PROFILE
-    # =========================
+  
 
     def display_profile(self, user):
 
@@ -185,10 +176,7 @@ class UserController:
 
         print("=" * 40)
 
-    # =========================
-    # USER MENU
-    # Handles both Admin and Customer
-    # =========================
+   
 
     def show_user_menu(self, user):
         """

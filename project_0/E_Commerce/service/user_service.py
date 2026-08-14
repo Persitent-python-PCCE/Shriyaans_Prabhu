@@ -7,9 +7,7 @@ class UserService:
     def __init__(self):
         self.user_dao = UserDAO()
 
-    # =========================
-    # VALIDATION
-    # =========================
+    
 
     def validate_email(self, email):
         pattern = r"^[^@\s]+@[^@\s]+\.[^@\s]+$"
@@ -18,9 +16,7 @@ class UserService:
     def validate_password(self, password):
         return len(password) >= 8
 
-    # =========================
-    # REGISTER
-    # =========================
+    
 
     def register(
         self,
@@ -34,8 +30,7 @@ class UserService:
         country=None,
         role="CUSTOMER"
     ):
-        # ---------- Validation ----------
-
+       
         if not name.strip():
             print("Name cannot be empty.")
             return None
@@ -51,25 +46,23 @@ class UserService:
         email = email.strip().lower()
         role = role.upper()
 
-        # ---------- Validate role ----------
-
+        
         if role not in ["ADMIN", "CUSTOMER"]:
             print("Invalid role. Defaulting to CUSTOMER.")
             role = "CUSTOMER"
 
-        # ---------- Check existing user ----------
-
+         
         existing_user = self.user_dao.get_user_by_email(email)
 
         if existing_user:
             print("Email already registered.")
             return None
 
-        # ---------- Hash password ----------
+        
 
         password_hash = hash_password(password)
 
-        # ---------- Create user ----------
+         
 
         if role == "ADMIN":
             user_id = self.user_dao.create_admin(
@@ -97,8 +90,7 @@ class UserService:
         print("Registration successful!")
         print(f"User ID: {user_id}")
 
-        # ---------- Return appropriate user object ----------
-
+         
         if role == "ADMIN":
             return Admin(
                 user_id=user_id,
@@ -117,17 +109,14 @@ class UserService:
             country=country.strip() if country else None
         )
 
-    # =========================
-    # LOGIN
-    # =========================
+   
 
     def login(self, name, password):
 
         # email = email.strip().lower()
         name=name.strip().lower()
 
-        # ---------- Get user ----------
-
+      
         # user_data = self.user_dao.get_user_by_email(email)
         user_data=self.user_dao.get_user_by_name(name)
 
@@ -135,8 +124,7 @@ class UserService:
             print("Invalid email or password.")
             return None
 
-        # ---------- Verify password ----------
-
+        
         if not verify_password(
             password,
             user_data["password_hash"]
@@ -144,7 +132,7 @@ class UserService:
             print("Invalid email or password.")
             return None
 
-        # ---------- Create appropriate object ----------
+       
 
         if user_data["role_name"] == "ADMIN":
             user = Admin(
@@ -172,9 +160,7 @@ class UserService:
 
         return user
 
-    # =========================
-    # GET USER
-    # =========================
+    
 
     def get_user(self, user_id, role=None):
 
@@ -201,15 +187,13 @@ class UserService:
             country=user_data["country"]
         )
 
-    # =========================
-    # DELETE ACCOUNT
-    # =========================
+   
 
     def delete_account(self, email, password):
 
         email = email.strip().lower()
 
-        # ---------- Get user ----------
+         
 
         user_data = self.user_dao.get_user_by_email(email)
 
@@ -217,7 +201,7 @@ class UserService:
             print("User not found.")
             return False
 
-        # ---------- Verify password ----------
+        
 
         if not verify_password(
             password,
@@ -226,7 +210,7 @@ class UserService:
             print("Invalid password.")
             return False
 
-        # ---------- Delete user ----------
+        
 
         success = self.user_dao.delete_user(
             user_data["user_id"],

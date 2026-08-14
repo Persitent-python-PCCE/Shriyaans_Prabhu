@@ -4,9 +4,7 @@ class OrderController:
     def __init__(self):
         self.order_service = OrderService()
 
-    # ==========================================
-    # PLACE ORDER
-    # ==========================================
+    
 
     def place_order(self, customer):
 
@@ -71,9 +69,7 @@ class OrderController:
 
         return order
 
-    # ==========================================
-    # DISPLAY ORDER
-    # ==========================================
+   
 
     def display_order(self, order):
 
@@ -100,9 +96,7 @@ class OrderController:
 
         print("=" * 70)
 
-    # ==========================================
-    # CUSTOMER ORDER HISTORY
-    # ==========================================
+    
 
     def order_history(self, customer):
 
@@ -126,10 +120,7 @@ class OrderController:
                 f"Status: {order.status}"
             )
 
-    # ==========================================
-    # VIEW SINGLE ORDER
-    # ==========================================
-
+  
     def view_order(self, customer=None):
 
         try:
@@ -142,7 +133,7 @@ class OrderController:
             if order is None:
                 return
 
-            # Customer may only view their own order.
+             
             if customer is not None:
                 if order.customer_id != customer.user_id:
                     print(
@@ -156,9 +147,7 @@ class OrderController:
         except ValueError:
             print("Invalid order ID.")
 
-    # ==========================================
-    # ADMIN - ALL ORDERS
-    # ==========================================
+     
 
     def display_all_orders(self):
 
@@ -182,9 +171,7 @@ class OrderController:
                 f"Status: {order['status']}"
             )
 
-    # ==========================================
-    # ADMIN - UPDATE STATUS
-    # ==========================================
+    
 
     def update_status(self):
 
@@ -227,9 +214,7 @@ class OrderController:
             print("Invalid order ID.")
             return False
 
-    # ==========================================
-    # CUSTOMER ORDER MENU
-    # ==========================================
+     
 
     def customer_menu(self, customer):
 
@@ -263,9 +248,7 @@ class OrderController:
             else:
                 print("Invalid choice.")
 
-    # ==========================================
-    # ADMIN ORDER MENU
-    # ==========================================
+     
 
     def admin_menu(self):
 

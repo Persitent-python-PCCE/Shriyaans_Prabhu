@@ -4,9 +4,7 @@ class ProductController:
     def __init__(self):
         self.product_service = ProductService()
 
-    # ==========================================
-    # DISPLAY PRODUCTS
-    # ==========================================
+  
 
     def display_products(self):
 
@@ -44,9 +42,7 @@ class ProductController:
 
             print("-" * 90)
 
-    # ==========================================
-    # ADD PRODUCT
-    # ==========================================
+    
 
     def add_product(self):
 
@@ -107,9 +103,7 @@ class ProductController:
                 "Please enter valid numbers."
             )
 
-    # ==========================================
-    # UPDATE PRODUCT
-    # ==========================================
+    
 
     def update_product(self):
 
@@ -166,9 +160,6 @@ class ProductController:
                 "Please enter valid numbers."
             )
 
-    # ==========================================
-    # UPDATE STOCK
-    # ==========================================
 
     def update_stock(self):
 
@@ -199,9 +190,7 @@ class ProductController:
                 "Please enter a valid number."
             )
 
-    # ==========================================
-    # DELETE PRODUCT
-    # ==========================================
+    
 
     def delete_product(self):
 
@@ -227,9 +216,7 @@ class ProductController:
         except ValueError:
             print("\nInvalid product ID.")
 
-    # ==========================================
-    # PRODUCT DETAILS
-    # ==========================================
+   
 
     def view_product(self):
 
@@ -260,9 +247,7 @@ class ProductController:
         except ValueError:
             print("Invalid product ID.")
 
-    # ==========================================
-    # ADMIN PRODUCT MENU
-    # ==========================================
+  
 
     def admin_menu(self):
 
