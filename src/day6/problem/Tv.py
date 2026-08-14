@@ -63,7 +63,6 @@ show=tv.show()
 while True:
     try:
         if  show==False:
-            print()
             print(f"1.search a show")
             print(f"2.Exit")
             c=int(input("choice:"))
@@ -72,10 +71,7 @@ while True:
                 show=True
             elif c==2:
                 break
-            else:
-                print("No such choice available.")
         else:
-            print()
             print(f"1.display show details")
             print(f"2. return to menu")
             print(f"3. Display Episodes")
